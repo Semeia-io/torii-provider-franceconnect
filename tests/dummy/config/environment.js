@@ -24,7 +24,7 @@ module.exports = function(environment) {
 
     torii:{
        providers: {
-         'franceconnect-oauth2': {
+         'franceconnect': {
            clientId: 'dummy-client-id',
            scope: 'openid identite_pivot',
            nonce: 'test'
