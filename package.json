@@ -1,6 +1,6 @@
 {
   "name": "torii-provider-franceconnect",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Torii Provider for franceconnect.gouv.fr wrapped as an Ember-CLI Addon",
   "keywords": [
     "ember-addon",

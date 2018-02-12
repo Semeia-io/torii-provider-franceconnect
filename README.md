@@ -1,26 +1,32 @@
-# torii-provider-franceconnect
+# Ember CLI Torii Provider for FranceConnect
 
-This README outlines the details of collaborating on this Ember addon.
+Torii Provider for franceconnect.gouv.fr wrapped as an Ember-CLI Addon
 
-## Installation
+## Usage
 
-* `git clone <repository-url>` this repository
-* `cd torii-provider-franceconnect`
-* `yarn install`
+* `ember install torii`
+* `ember install torii-provider-franceconnect`
 
-## Running
+Edit /config/environment.js to add your Torii provider configuration
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+```
+module.exports = function(environment) {
+  var ENV = {
 
-* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+   // ... other ENV config stuff here
 
-## Building
+   torii:{
+      providers: {
+        'franceconnect-oauth2': {
+          clientId: process.env.FRANCECONNECT_CLIENT_ID,
+          scope: 'openid identite_pivot',
+          nonce: 'test'
+        }
+      }
+    }
+  };
 
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+  return ENV;
+};
+```
