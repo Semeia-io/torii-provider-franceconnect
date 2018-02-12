@@ -2,10 +2,12 @@
 
 Torii Provider for franceconnect.gouv.fr wrapped as an Ember-CLI Addon
 
-## Usage
+## Installtion
 
 * `ember install torii`
 * `ember install torii-provider-franceconnect`
+
+## Configuration
 
 Edit /config/environment.js to add your Torii provider configuration
 
