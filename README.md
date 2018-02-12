@@ -9,7 +9,10 @@ Torii Provider for franceconnect.gouv.fr wrapped as an Ember-CLI Addon
 
 ## Configuration
 
-Edit /config/environment.js to add your Torii provider configuration
+Edit /config/environment.js to add your Torii provider configuration.
+
+You can use [ember-cli-dotenv](https://github.com/fivetanley/ember-cli-dotenv)
+to avoid commiting credentials to git.
 
 
 ```
