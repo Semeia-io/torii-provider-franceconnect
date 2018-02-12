@@ -20,7 +20,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    torii:{
+       providers: {
+         'franceconnect-oauth2': {
+           clientId: 'dummy-client-id',
+           scope: 'openid identite_pivot',
+           nonce: 'test'
+         }
+       }
+     }
   };
 
   if (environment === 'development') {
