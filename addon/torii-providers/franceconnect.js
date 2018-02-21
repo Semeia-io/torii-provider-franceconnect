@@ -10,6 +10,10 @@ export default Oauth2.extend({
     this.requiredUrlParams = this.requiredUrlParams.concat('nonce');
     this.optionalUrlParams = ['scope'];
     this.responseParams = ['code', 'state'];
+  },
+
+  fetch(data) {
+    return data;
   }
 
 });
